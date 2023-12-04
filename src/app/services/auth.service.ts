@@ -13,5 +13,15 @@ export class AuthService {
   register(email: string, password: string) {
     return this.http.post(environment.apiUrl + 'users/register', { email, password })
   }
-  
+
+  login(email: string, password: string) {
+    return this.http.post(environment.apiUrl + 'users/login', { email, password })
+  }
+
+  isAuthenticated(): boolean {
+    const token = localStorage.getItem('token');
+    // Check if the token exists
+    return !!token;
+  }
+
 }
