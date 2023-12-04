@@ -8,16 +8,20 @@
     </div>
 
     <!-- Logged-in users -->
+    @if (authService.isAuthenticated()) {
     <div class="user">
       <a href="#">Add Fact</a>
       <a href="#">Logout</a>
     </div>
+    }
 
     <!-- Guest users -->
+    @if (!authService.isAuthenticated()) {
     <div class="guest">
       <a href="login">Login</a>
       <a href="register">Register</a>
-
     </div>
+    }
+
   </nav>
 </header>
