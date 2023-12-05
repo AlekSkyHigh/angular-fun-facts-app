@@ -18,6 +18,10 @@ export class AuthService {
     return this.http.post(environment.apiUrl + 'users/login', { email, password })
   }
 
+  logout() {
+    return this.http.get(environment.apiUrl + 'users/logout')
+  }
+
   isAuthenticated(): boolean {
     const token = localStorage.getItem('token');
     // Check if the token exists
