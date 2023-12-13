@@ -1,35 +1,12 @@
-<!-- Create Page (Only for logged-in users) -->
 <section id="create">
-    <div class="form">
-      <h2>Add Fact</h2>
-      <form class="create-form">
-        <input
-          type="text"
-          name="category"
-          id="category"
-          placeholder="Category"
-        />
-        <input
-          type="text"
-          name="image-url"
-          id="image-url"
-          placeholder="Image URL"
-        />
-        <textarea
-        id="description"
-        name="description"
-        placeholder="Description"
-        rows="10"
-        cols="50"
-      ></textarea>
-      <textarea
-        id="additional-info"
-        name="additional-info"
-        placeholder="Additional Info"
-        rows="10"
-        cols="50"
-      ></textarea>
-        <button type="submit">Add Fact</button>
-      </form>
-    </div>
-  </section>
+  <div class="form">
+    <h2>Add Fact</h2>
+    <form class="create-form" #form="ngForm" (ngSubmit)="createEntry(form)">
+      <input type="text" name="category" id="category" placeholder="Category" ngModel />
+      <input type="text" name="imageUrl" id="imageUrl" placeholder="Image URL" ngModel />
+      <textarea id="description" name="description" placeholder="Description" rows="10" cols="50" ngModel></textarea>
+      <textarea id="moreInfo" name="moreInfo" placeholder="Additional Info" rows="10" cols="50" ngModel></textarea>
+      <button type="submit">Add Fact</button>
+    </form>
+  </div>
+</section>
