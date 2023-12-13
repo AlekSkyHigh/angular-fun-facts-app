@@ -10,7 +10,7 @@
     <!-- Logged-in users -->
     @if (authService.isAuthenticated()) {
     <div class="user">
-      <a href="#">Add Fact</a>
+      <a [routerLink]="['create']">Add Fact</a>
       <a [routerLink]="['/']" (click)="logout()">Logout</a>
     </div>
     }

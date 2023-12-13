@@ -4,12 +4,14 @@ import { HomeComponent } from './core/pages/home/home.component';
 import { RegisterComponent } from './core/pages/register/register.component';
 import { LoginComponent } from './core/pages/login/login.component';
 import { DashboardComponent } from './core/pages/dashboard/dashboard.component';
+import { CreateComponent } from './core/pages/create/create.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
   { path: 'register', component: RegisterComponent, pathMatch: 'full' },
   { path: 'login', component: LoginComponent, pathMatch: 'full' },
   { path: 'dashboard', component: DashboardComponent, pathMatch: 'full' },
+  { path: 'create', component: CreateComponent, pathMatch: 'full' },
 ];
 
 @NgModule({
