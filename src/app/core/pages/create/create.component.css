@@ -19,7 +19,7 @@
   color: rgb(255, 0, 0);
 }
 
-.form input{
+.form input {
   border-radius: 10px;
   outline: 0;
   background: #ffffff;
@@ -31,6 +31,7 @@
   box-sizing: border-box;
   font-size: 14px;
 }
+
 .form textarea {
   background: #ffffff;
   border-radius: 10px;
@@ -42,6 +43,7 @@
   margin-bottom: 10px;
 
 }
+
 .form button {
   font-family: 'Alkalami', serif;
   font-family: 'Kaushan Script', cursive;
@@ -56,8 +58,9 @@
   font-size: 14px;
   cursor: pointer;
   border-radius: 5px;
-  
+
 }
+
 .form button:hover,
 .form button:active,
 .form button:focus {
@@ -70,6 +73,7 @@
   max-width: 300px;
   margin: 0 auto;
 }
+
 .container:before,
 .container:after {
   content: "";
@@ -82,20 +86,23 @@
   color: #6b6767;
   font-size: 17px;
 }
+
 .form .message a {
   color: #bd2c2c;
   text-decoration: none;
 }
 
-#search .form h2{
-margin-top:-40px;
-margin-bottom: 0px;
+#search .form h2 {
+  margin-top: -40px;
+  margin-bottom: 0px;
   font-size: 30px;
   color: rgb(190, 103, 2);
 }
-.search-result > .fruit {
+
+.search-result>.fruit {
   scale: 0.5;
 }
+
 .search-result {
   margin-top: -50px;
   display: flex;
