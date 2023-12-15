@@ -8,7 +8,7 @@
           <img src="{{entry.imageUrl}}" alt="{{entry.category}} image" />
           <h3 class="category">{{entry.category}}</h3>
           <p class="description">{{entry.description}}</p>
-          <a class="details-btn" href="">More Info</a>
+          <a class="details-btn" [routerLink]="['/details']">More Info</a>
         </div>
       }
   }
