@@ -5,6 +5,7 @@ import { RegisterComponent } from './core/pages/register/register.component';
 import { LoginComponent } from './core/pages/login/login.component';
 import { DashboardComponent } from './core/pages/dashboard/dashboard.component';
 import { CreateComponent } from './core/pages/create/create.component';
+import { DetailsComponent } from './core/pages/details/details.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full' },
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent, pathMatch: 'full' },
   { path: 'dashboard', component: DashboardComponent, pathMatch: 'full' },
   { path: 'create', component: CreateComponent, pathMatch: 'full' },
+  { path: 'details', component: DetailsComponent, pathMatch: 'full' },
 ];
 
 @NgModule({
