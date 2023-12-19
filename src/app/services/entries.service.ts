@@ -18,4 +18,8 @@ export class EntriesService {
     return this.http.post<Entry[]>(environment.apiUrl + 'data/facts', data);
   }
 
+  getEntryById(entryId: string) {
+    return this.http.get<Entry>(environment.apiUrl + `data/facts/${entryId}`)
+  }
+
 }
