@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AuthService } from 'src/app/services/auth.service';
 import { EntriesService } from 'src/app/services/entries.service';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 import { Entry } from 'src/app/types/entry.model';
 
 @Component({
@@ -20,10 +19,8 @@ export class DetailsComponent implements OnInit {
 
   constructor(
     private entryService: EntriesService,
-    private router: Router,
     private route: ActivatedRoute,
   ) { }
-
 
   ngOnInit(): void {
     this.route.params.subscribe((params) => {
