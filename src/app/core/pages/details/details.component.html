@@ -1,0 +1,35 @@
+<section id="details">
+    <div id="details-wrapper">
+
+        @if (entryDetails) {
+
+            <img id="details-img" src="{{entryDetails.imageUrl}}" alt="example1" />
+            <p id="details-category">{{entryDetails.category}}</p>
+            <div id="info-wrapper">
+                <div id="details-description">
+                    <p id="description">
+                        {{entryDetails.description}}
+                    </p>
+                    <p id="more-info">
+                        {{entryDetails.moreInfo}}
+                    </p>
+                </div>
+
+                <h3>Likes:<span id="likes">0</span></h3>
+
+                <!-- Edit and Delete are only for creator -->
+                <div id="action-buttons">
+                    <a href="" id="edit-btn">Edit</a>
+                    <a href="" id="delete-btn">Delete</a>
+
+                    <!-- Bonus - Only for logged-in users ( not authors ) -->
+                    <a href="" id="like-btn">Like</a>
+
+                </div>
+            </div>
+
+        }
+
+    </div>
+
+</section>
